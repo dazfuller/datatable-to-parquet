@@ -72,7 +72,8 @@ namespace DataTableToParquet
                                     }
                                 }
 
-                                // Copy the list values to an array of the same type
+                                // Copy the list values to an array of the same type as the WriteColumn method expects
+                                // and Array
                                 var valuesArray = Array.CreateInstance(valueType, list.Count);
                                 list.CopyTo(valuesArray, 0);
 
